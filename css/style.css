@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid red;
-} */
+}
 html{
     height:100%;
 }
@@ -111,7 +111,6 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); */
 }
-
 #homeBodyText{
     width:55%;
     float:right;
@@ -146,7 +145,7 @@ body {
     transform: translateY(-50%); */
 }
 #homeBody2Text{
-    width:30%;
+    width:40%;
     float:left;
     margin-left: 2rem;
     text-align: center;
