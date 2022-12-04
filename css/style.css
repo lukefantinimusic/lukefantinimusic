@@ -1,4 +1,6 @@
-
+/* * {
+    border: 1px solid red;
+} */
 html{
     height:100%;
 }
@@ -6,7 +8,7 @@ body {
     background-color: rgb(155, 102, 102);
     margin: 0;
     background: 0;
-    min-width: 55rem;
+    min-width: 58rem;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     min-height:100%;
     position: relative;
@@ -71,6 +73,16 @@ body {
             text-decoration: none;
             font-size: 1rem;
         }
+    #instaLogoA {
+        position:relative;
+    }
+    #instaLogo {
+        width:1.4rem;
+        margin-top:0;
+        padding:0;
+        position:absolute;
+        bottom:0;
+    }
 
 /* Bottom Contact Bar */
 #bottomContact {
