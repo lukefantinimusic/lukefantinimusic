@@ -14,6 +14,8 @@ body {
     position: relative;
 }
 
+
+
 /* Navigation Bar */
 #topbar {
     background-color: lightgray;
@@ -73,9 +75,6 @@ body {
             text-decoration: none;
             font-size: 1rem;
         }
-    #instaLogoA {
-        position:relative;
-    }
     #instaLogo {
         width:1.4rem;
         margin-top:0;
@@ -132,11 +131,15 @@ body {
     margin: 0;
     margin-top:.5rem;
     width: 100%;
+    font-size: x-large;
+
 }
 #homeBody h4{
     margin:0;
     margin-top: 1rem;
     width: 100%;
+    font-size: large;
+
 }
 
 #homeBody2{
@@ -164,6 +167,7 @@ body {
     margin:0;
     margin-top: 1rem;
     width: 100%;
+    font-size: large;
 }
 
 /* About */
@@ -181,6 +185,10 @@ body {
 }
 #aboutBody h3 {
     margin-top:0;
+    font-size: x-large;
+}
+#aboutBody h4{
+    font-size: large;
 }
 #gradPic {
     width:30%;
@@ -202,6 +210,10 @@ body {
 }
 #projectsBody h3 {
     margin-top:0;
+    font-size:x-large;
+}
+#projectsBody h4 {
+    font-size:large;
 }
 #projectsGuitar {
     width:39%;
@@ -222,6 +234,10 @@ body {
 }
 #projects2Body h3 {
     margin-top:0;
+    font-size:x-large;
+}
+#projects2Body h4 {
+    font-size:large;
 }
 #projectsLivesound {
     width:49%;
@@ -242,8 +258,29 @@ body {
 }
 #projects3Body h3 {
     margin-top:0;
+    font-size:x-large;
+}
+#projects3Body h4 {
+    font-size:large;
 }
 #projectsMixing {
     width:49%;
     float:right;
 }
+
+/* Contact */
+#contact {
+width: 50%;
+margin-left: 25%;
+margin-right: 25%;
+margin-top:4rem;
+text-align: center;
+}
+#contact h2{
+    font-size: xx-large;
+    text-decoration: underline;
+}
+#contact h3{
+    font-size:x-large;
+}
+
