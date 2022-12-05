@@ -68,14 +68,22 @@ body {
         }
         nav li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 1rem;
             font-size: x-large;
         }
-        nav a {
+        #navButtons {
             color: rgb(0, 0, 0);
             text-decoration: none;
             font-size: 1rem;
         }
+        #navButtons:hover {
+            background-color: darkgray;
+        }
+        #navButtons:active {
+            background-color: darkgray;
+            color:rgb(235, 235, 235);
+        }
+
     #instaLogo {
         width:1.4rem;
         margin-top:0;

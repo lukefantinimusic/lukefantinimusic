@@ -131,6 +131,7 @@ function stopOscillator(e) {
         }
     }
 };
+
 function getFrequency(e){
     if (e.repeat === false) {
     let typedKey = e.key;
