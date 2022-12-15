@@ -90,7 +90,7 @@ body {
         padding:0;
         position:absolute;
         bottom:0;
-    }
+}
 
 /* Bottom Contact Bar */
 #bottomContact {
@@ -99,6 +99,7 @@ body {
     /* position:absolute;
     bottom:0; */
     width:100%;
+    height:3rem;
     margin-bottom:1rem;
 }
 #bottomContact h3 {
@@ -114,33 +115,34 @@ body {
 /* Home */
 #homeBody{
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 #headshot {
-    float: left;
-    margin-left: 2rem;
+    align-self: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width:35%;
-    max-width:55rem;
+    width:50%;
+    max-width:35rem;
     height:auto;
     /* position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); */
 }
-#homeBodyText{
+/* #homeBodyText{
     width:55%;
     float:right;
     margin-top:2rem;
     margin-right: 2rem;
     text-align: center;
-}
-#homeBody h3{
+} */
+/* #homeBody h3{
     margin: 0;
-    margin-top:.5rem;
+    margin-top:3rem;
     width: 100%;
-    font-size: x-large;
+    font-size: 3rem;
 
 }
 #homeBody h4{
@@ -149,24 +151,25 @@ body {
     width: 100%;
     font-size: large;
 
-}
+} */
 
 #homeBody2{
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 #BoRhap {
-    float: right;
-    margin-right: 2rem;
+    float: left;
     margin-bottom: 2rem;
-    width:50%;
-    max-width:55rem;
+    width:75%;
+    max-width:50rem;
     height:auto;
     /* position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); */
 }
-#homeBody2Text{
+/* #homeBody2Text{
     width:40%;
     float:left;
     margin-left: 2rem;
@@ -177,7 +180,7 @@ body {
     margin-top: 1rem;
     width: 100%;
     font-size: large;
-}
+} */
 
 /* About */
 #aboutBody {
@@ -191,6 +194,7 @@ body {
     text-align: center;
     width:60%;
     float: left;
+    line-height: 2rem;
 }
 #aboutBody h3 {
     margin-top:0;
@@ -216,6 +220,7 @@ body {
     text-align: center;
     width:59%;
     float: left;
+    line-height: 2rem;
 }
 #projectsBody h3 {
     margin-top:0;
@@ -240,6 +245,7 @@ body {
     text-align: center;
     width:49%;
     float: right;
+    line-height: 2rem;
 }
 #projects2Body h3 {
     margin-top:0;
@@ -264,6 +270,7 @@ body {
     text-align: center;
     width:49%;
     float: left;
+    line-height: 2rem;
 }
 #projects3Body h3 {
     margin-top:0;
@@ -280,6 +287,11 @@ body {
 /* Synthesis */
 #synthesisBody {
     text-align: center;
+}
+
+#waveList {
+    height: 2rem;
+    font-size:large;
 }
 
 div#keyboardDiv {

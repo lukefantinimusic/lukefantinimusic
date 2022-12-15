@@ -16,31 +16,43 @@ function IgnoreAlpha(e) {
     }
 }
 
-function createSineOscillator(incomingFrequency) {
-        let freq = incomingFrequency;
-        let partial = 1
-            let amp = 1 * 1;
-            amp /= partial;
+// function createSineOscillator(incomingFrequency) {
+//         let freq = incomingFrequency;
+//         let partial = 1
+//             let amp = 1 * 1;
+//             amp /= partial;
 
-            let oscilBankLen = oscilBank.length;
+//             let oscilBankLen = oscilBank.length;
             
-            oscilBank[oscilBankLen] = [] 
-            oscilBank[oscilBankLen][0] = incomingFrequency;
+//             oscilBank[oscilBankLen] = [] 
+//             oscilBank[oscilBankLen][0] = incomingFrequency;
             
-            for (i = 0; i < 1; i++) { 
-                oscilBank[oscilBankLen][i + 1] = new Oscil(audioCtx, freq, amp).play();   
-            }
+//             for (i = 0; i < 1; i++) { 
+//                 oscilBank[oscilBankLen][i + 1] = new Oscil(audioCtx, freq, amp).play();   
+//             }
         
-            partial++;
-            freq = incomingFrequency;
+//             partial++;
+//             freq = incomingFrequency;
+// };
+
+function createSineOscillator(incomingFrequency) {
+    let freq = incomingFrequency;
+    let amp = 1 * 1;
+    // let sineOsc;
+
+    sineOsc = new Oscil(audioCtx, freq, amp);
+    sineOsc.play();
+
+    // console.log(sineOsc);
 };
+
 
 function createSquareOscillator(incomingFrequency) {
     let freq = incomingFrequency;
     let partial = 1
 
     while (freq <= nyquist) {
-        let amp = 0.3 * 1;
+        let amp = 0.1 * 1;
         amp /= partial;
 
         let oscilBankLen = oscilBank.length;
@@ -63,7 +75,7 @@ function createSawtoothOscillator(incomingFrequency) {
     let partial = 1
 
     while (freq <= nyquist) {
-        let amp = 0.3 * 1;
+        let amp = 0.1 * 1;
         amp /= partial;
 
         let oscilBankLen = oscilBank.length;
@@ -85,7 +97,7 @@ function createTriangleOscillator(incomingFrequency) {
     let partial = 1
 
     while (freq <= nyquist) { 
-        let amp = 0.3 * 1;
+        let amp = 0.1 * 1;
         amp /= partial*partial;
 
         let oscilBankLen = oscilBank.length;
@@ -104,6 +116,8 @@ function createTriangleOscillator(incomingFrequency) {
 };
 
 function stopOscillator(e) {
+    sineOsc.stop();
+
     let freqVal;
 
     if (e.type === "mouseup") {
@@ -117,7 +131,9 @@ function stopOscillator(e) {
             freqVal = keyFreqMap[typedKey];
         }
     }
-        
+
+    console.log ("hello");
+
     const oscilsOff = oscilBank.filter( 
         (origOscilBank) => {
         if (origOscilBank[0] === freqVal) {
@@ -137,7 +153,7 @@ function getFrequency(e){
     let typedKey = e.key;
     let freqVal = (keyFreqMap[typedKey]);
     
-    console.log(freqVal);
+    // console.log(freqVal);
 
     selectWaveType();
 
