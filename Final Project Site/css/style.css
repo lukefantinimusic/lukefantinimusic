@@ -1,0 +1,411 @@
+/* * {
+    border: 1px solid red;
+} */
+html{
+    height:100%;
+}
+body {
+    background-color: rgb(155, 102, 102);
+    margin: 0;
+    background: 0;
+    min-width: 58rem;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    min-height:100%;
+    position: relative;
+}
+
+
+
+
+/* Navigation Bar */
+#topbar {
+    background-color: lightgray;
+    height:6rem;
+    padding: 0;
+    position:relative;
+    border-bottom: .2rem solid gray;
+}
+
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    nav div {
+        list-style-type: none;
+        margin: 0;
+        margin-right: 4rem;
+        padding: 0;
+        text-align: left;
+        width:25%;
+        float:left;
+    }
+        nav h1 {
+        text-align: left;
+        display:inline;
+        margin-left:2rem;
+        font-size:1.5rem;
+        }
+        nav h2 {
+        text-align:left;
+        margin:0;
+        margin-left:2rem;
+        font-size:.75rem;
+        }
+
+    nav ul {
+            list-style-type: none;
+            margin: 0;
+            margin-top: 1rem;
+            margin-right: 2rem;
+            padding: 0;
+            text-align: center;
+            width:50%;
+            float:right;
+        }
+        nav li {
+            display: inline;
+            margin-right: 1rem;
+            font-size: x-large;
+        }
+        #navButtons {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        #navButtons:hover {
+            background-color: darkgray;
+        }
+        #navButtons:active {
+            background-color: darkgray;
+            color:rgb(235, 235, 235);
+        }
+
+    #instaLogo {
+        width:1.4rem;
+        margin-top:0;
+        padding:0;
+        position:absolute;
+        bottom:0;
+}
+
+/* Bottom Contact Bar */
+#bottomContact {
+    border-top:.2rem solid gray;
+    text-align:center;
+    /* position:absolute;
+    bottom:0; */
+    width:100%;
+    height:3rem;
+    margin-bottom:1rem;
+}
+#bottomContact h3 {
+    text-decoration: underline;
+    margin:0;
+    font-size: medium;
+}
+#bottomContact h4 {
+    margin:0;
+    font-size: small;
+}
+        
+/* Home */
+#homeBody{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#headshot {
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width:50%;
+    max-width:35rem;
+    height:auto;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+/* #homeBodyText{
+    width:55%;
+    float:right;
+    margin-top:2rem;
+    margin-right: 2rem;
+    text-align: center;
+} */
+/* #homeBody h3{
+    margin: 0;
+    margin-top:3rem;
+    width: 100%;
+    font-size: 3rem;
+
+}
+#homeBody h4{
+    margin:0;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: large;
+
+} */
+
+#homeBody2{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+#BoRhap {
+    float: left;
+    margin-bottom: 2rem;
+    width:75%;
+    max-width:50rem;
+    height:auto;
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+/* #homeBody2Text{
+    width:40%;
+    float:left;
+    margin-left: 2rem;
+    text-align: center;
+}
+#homeBody2 h4{
+    margin:0;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: large;
+} */
+
+/* About */
+#aboutBody {
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+#aboutBodyText{
+    text-align: center;
+    width:60%;
+    float: left;
+    line-height: 2rem;
+}
+#aboutBody h3 {
+    margin-top:0;
+    font-size: x-large;
+}
+#aboutBody h4{
+    font-size: large;
+}
+#gradPic {
+    width:30%;
+    float:right;
+}
+
+/* Projects (Career) */
+#projectsBody {
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+#projectsBodyText{
+    text-align: center;
+    width:59%;
+    float: left;
+    line-height: 2rem;
+}
+#projectsBody h3 {
+    margin-top:0;
+    font-size:x-large;
+}
+#projectsBody h4 {
+    font-size:large;
+}
+#projectsGuitar {
+    width:39%;
+    float:right;
+}
+
+#projects2Body {
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+#projects2BodyText{
+    text-align: center;
+    width:49%;
+    float: right;
+    line-height: 2rem;
+}
+#projects2Body h3 {
+    margin-top:0;
+    font-size:x-large;
+}
+#projects2Body h4 {
+    font-size:large;
+}
+#projectsLivesound {
+    width:49%;
+    float:left;
+}
+
+#projects3Body {
+    overflow: hidden;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+#projects3BodyText{
+    text-align: center;
+    width:49%;
+    float: left;
+    line-height: 2rem;
+}
+#projects3Body h3 {
+    margin-top:0;
+    font-size:x-large;
+}
+#projects3Body h4 {
+    font-size:large;
+}
+#projectsMixing {
+    width:49%;
+    float:right;
+}
+
+/* Synthesis */
+#synthesisBody {
+    text-align: center;
+}
+
+#waveList {
+    height: 2rem;
+    font-size:large;
+}
+
+div#keyboardDiv {
+    display: flex;  /*===== FLEXBOX!! =====*/
+    margin: auto;
+    margin-top:1rem;
+    margin-bottom:8rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+}
+
+.key {
+    float: left;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.key p {
+    position: relative;
+    text-align: center;
+    margin: 15% auto;   /* Giving 2 values to the 'margin' property is a shortcut: the first value applies to top and bottom; the second to left and right */
+
+    overflow-wrap: break-word;
+}
+
+.whiteKey {
+    height: 300px;
+    z-index: 1; /* order of placement on the Z-axis; the higher the number, the further to the front an element is placed */
+    width: 20.5%;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.whiteKey:hover,
+.whiteKey:focus {
+    background-color: rgb(0, 164, 47);
+}
+
+.whiteKey:active {
+    background-color: rgb(0, 120, 34);
+}
+
+.blackKey {
+    position: absolute;
+    width: 5.5%;
+    height: 200px;
+    z-index: 2;
+    background-color: black;
+    color: white;
+}
+
+.blackKey:hover,
+.blackKey:focus {
+    background-color: rgb(0, 164, 47);
+}
+
+.blackKey:active {
+    background-color: rgb(0, 120, 34);
+}
+
+#key1 {
+    left: 17%;
+}
+
+#key3 {
+    left: 26%;
+}
+
+#key6 {
+    left: 39%;
+}
+
+#key8 {
+    left: 47.5%;
+}
+
+#key10 {
+    left: 55.5%;
+}
+
+#key13 {
+    left: 68.5%;
+}
+
+#key15 {
+    left: 77.5%;
+}
+
+#waveOptions {
+    width:75%;
+    margin: auto;
+}
+#waveList {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Contact */
+#contact {
+width: 50%;
+margin-left: 25%;
+margin-right: 25%;
+margin-top:4rem;
+text-align: center;
+}
+#contact h2{
+    font-size: xx-large;
+    text-decoration: underline;
+}
+#contact h3{
+    font-size:x-large;
+}
+
