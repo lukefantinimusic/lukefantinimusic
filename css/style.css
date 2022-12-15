@@ -101,6 +101,7 @@ body {
     width:100%;
     height:3rem;
     margin-bottom:1rem;
+    background-color: lightgray;
 }
 #bottomContact h3 {
     text-decoration: underline;
